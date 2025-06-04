@@ -14,7 +14,7 @@ class BooksController < ApplicationController
     @book.destroy
     respond_to do |format|
       format.html { redirect_to '/' }
-      format.json { haed :no_content }
+      format.json { head :no_content }
     end
   end
 
